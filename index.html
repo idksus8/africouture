@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AfriCouture</title>
+<meta name="description" content="Buy from independent African fashion designers, or open your own store.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--ink:#16130f;--white:#fff;--green:#0e3b2e;--saffron:#f2b134;--terracotta:#c8432b;--display:'Syne',sans-serif;--body:'Inter',sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);line-height:1.5}
+a{color:inherit;text-decoration:none}a:hover{opacity:.75}
+a:focus-visible{outline:3px solid var(--terracotta);outline-offset:3px}
+h1,h2,h3,.logo{font-family:var(--display);font-weight:800}
+h2{margin:0 0 32px;font-size:40px;letter-spacing:-1px}
+p{margin:0}
+.header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid var(--ink)}
+.logo{font-size:26px;letter-spacing:-.5px}.logo.small{font-size:18px}
+.nav{display:flex;flex-wrap:wrap;gap:28px;font-weight:500}
+.row{display:flex;flex-wrap:wrap;gap:16px}
+.btn{display:inline-block;padding:14px 28px;font-weight:600;min-height:44px}
+.btn-ink{background:var(--ink);color:var(--white)}
+.btn-saffron{background:var(--saffron);color:var(--ink)}
+.btn-outline{border:1px solid var(--white)}
+.hero{display:flex;flex-wrap:wrap;background:var(--green);color:var(--white)}
+.hero-copy{flex:1 1 420px;padding:96px 48px;display:flex;flex-direction:column;gap:28px;justify-content:center}
+.hero h1{margin:0;font-size:clamp(44px,6vw,72px);line-height:1;letter-spacing:-2px}
+.hero p{font-size:19px;max-width:520px}
+.hero-art{flex:1 1 420px;min-height:420px;background:repeating-linear-gradient(135deg,var(--saffron) 0 28px,var(--green) 28px 56px,var(--terracotta) 56px 84px,var(--green) 84px 112px)}
+.section{padding:72px 48px 40px}
+.head-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px}
+.underline{font-weight:600;text-decoration:underline}
+.grid{display:grid;gap:16px}
+.grid-200{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.grid-240{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.grid-260{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.tile{padding:56px 24px 20px;font-weight:600;font-size:20px}
+.saffron{background:var(--saffron)}.terracotta{background:var(--terracotta);color:var(--white)}.green{background:var(--green);color:var(--white)}.ink{background:var(--ink);color:var(--white)}
+.card{display:flex;flex-direction:column;gap:8px}
+.card-art{height:340px;margin-bottom:4px}
+.art-stripes{background:repeating-linear-gradient(45deg,var(--saffron) 0 16px,var(--ink) 16px 32px)}
+.art-bands{background:repeating-linear-gradient(0deg,var(--terracotta) 0 20px,var(--white) 20px 26px,var(--green) 26px 46px,var(--white) 46px 52px)}
+.art-dots{background:radial-gradient(circle at 30% 30%,var(--saffron) 0 60px,transparent 61px),radial-gradient(circle at 70% 65%,var(--green) 0 80px,transparent 81px),var(--terracotta)}
+.how{margin-top:40px;padding:72px 48px;background:var(--saffron)}
+.steps{list-style:none;margin:0;padding:0}.steps h3{margin:0 0 8px;font-size:24px}
+.sell{padding:96px 48px;background:var(--ink);color:var(--white);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between}
+.sell-copy{max-width:640px}
+.sell h2{margin:0 0 16px;font-size:clamp(32px,4vw,48px);line-height:1.05}
+.sell p{font-size:18px}
+.footer{padding:40px 48px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:14px}
+.footer .row{gap:24px}
+@media(max-width:640px){.header,.section,.how,.sell,.footer{padding-left:24px;padding-right:24px}.hero-copy{padding:56px 24px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <a href="#" class="logo">AfriCouture</a>
+  <nav class="nav"><a href="#shop">Shop</a><a href="#designers">Designers</a><a href="#how">How it works</a><a href="#sell">Sell with us</a></nav>
+  <a href="#sell" class="btn btn-ink">Open your store</a>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Fashion from Africa&rsquo;s boldest designers.</h1>
+    <p>Buy directly from independent designers across the continent, or open your own store and sell to the world.</p>
+    <div class="row"><a href="#shop" class="btn btn-saffron">Shop the collection</a><a href="#sell" class="btn btn-outline">Sell your designs</a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true"></div>
+</section>
+
+<section id="shop" class="section">
+  <h2>Shop by category</h2>
+  <div class="grid grid-200">
+    <a href="#" class="tile saffron">Dresses</a><a href="#" class="tile terracotta">Menswear</a><a href="#" class="tile green">Ankara &amp; prints</a><a href="#" class="tile ink">Accessories</a>
+  </div>
+</section>
+
+<section id="designers" class="section">
+  <div class="head-row"><h2>Featured designers</h2><a href="#" class="underline">See all designers</a></div>
+  <div class="grid grid-260">
+    <a href="#" class="card"><div class="card-art art-stripes" aria-hidden="true"></div><strong>[DESIGNER NAME]</strong><span>[CITY, COUNTRY], from [PRICE]</span></a>
+    <a href="#" class="card"><div class="card-art art-bands" aria-hidden="true"></div><strong>[DESIGNER NAME]</strong><span>[CITY, COUNTRY], from [PRICE]</span></a>
+    <a href="#" class="card"><div class="card-art art-dots" aria-hidden="true"></div><strong>[DESIGNER NAME]</strong><span>[CITY, COUNTRY], from [PRICE]</span></a>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <h2>How it works</h2>
+  <ol class="grid grid-240 steps">
+    <li><h3>Discover</h3><p>Browse pieces by designer, country or style.</p></li>
+    <li><h3>Order</h3><p>Choose your piece and send your order to the designer.</p></li>
+    <li><h3>Receive</h3><p>Your order ships from the designer to your door.</p></li>
+  </ol>
+</section>
+
+<section id="sell" class="sell">
+  <div class="sell-copy"><h2>Are you a designer? Your store starts here.</h2><p>List your collections, set your prices and reach customers worldwide.</p></div>
+  <a href="#" class="btn btn-saffron">Apply to sell</a>
+</section>
+
+<footer class="footer">
+  <span class="logo small">AfriCouture</span>
+  <span class="row"><a href="#">About</a><a href="#">Shipping &amp; returns</a><a href="#">Contact</a><a href="#">Instagram</a></span>
+</footer>
+</body>
+</html>
